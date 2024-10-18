@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade -->
+    <title>Fatec Meets</title> <!-- Título da página -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link para o arquivo boot strap CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header id="header">
+        <div class="header-content">
+            <img src="Banner1.png" alt="Banner Fatec Meets" class="app-banner"> <!-- Banner do aplicativo -->
+            <h1 id="main-title">Fatec Meets</h1> <!-- Título principal -->
+            <nav class="navbar"> <!-- Navegação do site -->
+                <ul>
+                    <li><a href="index.html">Principal</a></li> <!-- Link para a seção de funcionalidades -->
+                    <li><a href="#about">Sobre nós</a></li> <!-- Link para a seção "Sobre nós" -->
+                    <li><a href="contato.html">Fale com a gente!</a></li> <!-- Link para a seção de contato -->
+                </ul>
+            </nav>
+            <p>Conecte-se, estude e crie novas experiências com a Fatec!</p> <!-- Descrição do aplicativo -->
+            <a href="#download" class="btn">Baixar o App</a> <!-- Botão para baixar o aplicativo -->
+        </div>
+
+
+
+    </header>
+
+    <br><hr><br>
+
+    <form action="index.html">
+        <div class="mb-3 mt-3">
+          <label for="name" class="form-label">Como gostaria de ser chamado/a:</label>
+          <input type="text" class="form-control" id="email" placeholder="Entre com o nome" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu melhor E-mail:</label>
+          <input type="email" class="form-control" id="pwd" placeholder="Entre com o E-mail" name="pswd">
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">Numero para contato:</label>
+            <input type="number" class="form-control" id="numetoTelefone" placeholder="Numero telefone" name="pswd">
+          </div>
+
+        <div>
+            <label for="comment">Espaço para descrição do assunto (opcional):</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" >Enviar</button>
+      </form>
+
+      <br><hr><br>
+
+    <!-- Rodapé do site -->
+    <footer id="footer">
+        <p>© 2024 Fatec Meets - Todos os direitos reservados by - ChilliMugs</p> <!-- Informação de direitos autorais -->
+    </footer>
+
+
+
+
+
+     <!-- Inclua os arquivos JavaScript do Bootstrap -->
+     <script src="js/bootstrap.bundle.min.js"></script> <!-- Inclui o JS do Bootstrap 5 -->
+</body>
+</html>

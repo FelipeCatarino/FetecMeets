@@ -1,0 +1,278 @@
+/* Reset de margens */
+body, h1, p, img, header, section, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Estilos do header */
+#header {
+    background-color: #f52b2e;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#header .app-banner {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#header .header-content h1 {
+    font-size: 56px; /* Aumentando o tamanho do título */
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease;
+    color: #f6c440;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px; /* Espaçamento acima do menu */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff; /* Cor dos links do menu */
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block; /* Mostra o menu suspenso ao passar o mouse */
+}
+
+/* Estilos do menu suspenso */
+.dropdown {
+    display: none; /* Esconde o menu suspenso inicialmente */
+    position: absolute;
+    top: 100%; /* Faz o menu aparecer logo abaixo do item */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown li {
+    display: block; /* Cada item ocupa toda a largura */
+}
+
+.dropdown li a {
+    display: block; /* Cada link ocupa toda a largura */
+    padding: 10px;
+    color: #333; /* Cor do texto do menu suspenso */
+}
+
+.dropdown li a:hover {
+    background-color: #f52b2e; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+#header .header-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Botão */
+.btn {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    animation: pulse 1.5s infinite;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}
+
+/* Seções gerais */
+section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Estilo para todos os h2 */
+section h2 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #f6c440, #f52b2e, #ff9800);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textAnimation 5s ease-in-out infinite;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f52b2e;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+section h2:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+/* Efeito animado e colorido no parágrafo da seção */
+section p {
+    font-size: 18px;
+    color: #333;
+    background: linear-gradient(90deg, #f6c440, #f52b2e, #ff9800);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: textAnimation 5s ease-in-out infinite;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #f52b2e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section p:hover {
+    transform: scale(1.05); /* Efeito de hover */
+}
+
+@keyframes textAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Estilos da seção #features */
+#features .banner img {
+    width: 80%;
+    height: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+#features .section-content .banner {
+    margin-bottom: 30px;
+}
+
+#features .feature {
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+#features .feature img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#features .feature img:hover {
+    transform: scale(1.1);
+}
+
+/* Banner principal */
+.bannerPrincipal {
+    width: 400px;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 20px;
+}
+
+/* Estilos das imagens nas seções #about e #download */
+#about .banner img,
+#download .banner img {
+    width: 90%;
+    border-radius: 10px;
+    animation: fadeIn 3s ease;
+}
+
+/* Estilos para os ícones da loja */
+.download-links {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.store-icon {
+    width: 100px; /* Tamanho menor */
+    height: auto; /* Mantém a proporção */
+    transition: transform 0.3s ease;
+}
+
+.store-icon:hover {
+    transform: scale(1.1); /* Efeito de hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #f52b2e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
