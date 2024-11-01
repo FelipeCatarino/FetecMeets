@@ -30,7 +30,7 @@ body {
 }
 
 #header .header-content h1 {
-    font-size: 56px; /* Aumentando o tamanho do título */
+    font-size: 220px; /* Aumentando o tamanho do título */
     margin-bottom: 10px;
     animation: fadeInDown 1s ease;
     color: #f6c440;
@@ -57,7 +57,7 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #fff; /* Cor dos links do menu */
-    font-size: 18px;
+    font-size: 34px;
     padding: 10px 15px;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 #header .header-content p {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 20px;
     animation: fadeInUp 1s ease;
 }
@@ -105,7 +105,7 @@ body {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 32px;
     animation: pulse 1.5s infinite;
 }
 
